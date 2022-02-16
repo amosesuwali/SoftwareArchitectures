@@ -7,3 +7,16 @@ The introduction explict database classes (DAO,entities), API classes (services,
 
 First things first, is the file structure the architecture though? or what.
 
+-app
+    -manifest
+    -java
+        -com.your.packages
+            -models
+            -api
+            -helpers
+                -Ui binders
+            -database    
+    -res
+        -layouts
+        -values
+        -navigations
