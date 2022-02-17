@@ -3,7 +3,7 @@
 _MVC has been my most favourite pattern in general for both backend and frontend apps but when it comes to mobile applications things can get more complicated than what MVC can handle.
 The introduction of explict database classes (DAO,entities), API classes (services, etcs), viewmodels and general models has motivated me to redefine the architecture patterns that i use._
 
-
+---
 ## File Structure
 
 First things first, is the file structure the architecture? or what.
@@ -27,6 +27,7 @@ First things first, is the file structure the architecture? or what.
 
 _It's a common mistake to write all your code in an Activity or a Fragment. These UI-based classes should only contain logic that handles UI and operating system interactions. By keeping these classes as lean as possible, you can avoid many problems related to the component lifecycle, and improve the testability of these classes._
 
+----
 ## The Nomines are ...
 1. MVC (Model — View — Controller)
     * Model: Layer for storing data. It is responsible for handling the domain logic(real-world business rules) and communication with the database and network layers.
@@ -44,6 +45,20 @@ _It's a common mistake to write all your code in an Activity or a Fragment. Thes
 
 ## The winner of the 2022 Android Architecture Pattern is
 
-
+----
 # MVVM (Model View ViewModel) Architecture Pattern
 ![picture alt](https://media.geeksforgeeks.org/wp-content/uploads/20201002215007/MVVMSchema.png "Architecture Diagram for MVVM")
+
+Model — View — ViewModel (MVVM) is the industry-recognized software architecture pattern that overcomes all drawbacks of MVP and MVC design patterns. MVVM suggests separating the data presentation logic(Views or UI) from the core business logic part of the application. 
+
+MVVM pattern has some similarities with the MVP(Model — View — Presenter) design pattern as the Presenter role is played by ViewModel. However, the drawbacks of the MVP pattern has been solved by MVVM in the following ways:
+
+1. ViewModel does not hold any kind of reference to the View.
+2. Many to 1 relationship exist between View and ViewModel.
+3. No triggering methods to update the View.
+4. Ways to Implement MVVM in the Project
+
+There are 2 ways to implement MVVM design pattern in Android projects:
+
+1. Using the DataBinding library released by Google
+2. Using any tool like RxJava for DataBinding.
