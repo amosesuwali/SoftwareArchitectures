@@ -46,4 +46,4 @@ _It's a common mistake to write all your code in an Activity or a Fragment. Thes
 
 
 # MVVM (Model View ViewModel) Architecture Pattern
-https://media.geeksforgeeks.org/wp-content/uploads/20201002215007/MVVMSchema.png
+![picture alt](https://media.geeksforgeeks.org/wp-content/uploads/20201002215007/MVVMSchema.png "Architecture Diagram for MVVM")
